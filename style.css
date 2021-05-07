@@ -1,0 +1,193 @@
+.flex-1 {
+  flex: 1;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  min-height: 99vh;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  background: rgb(0, 0, 0);
+}
+
+h1 {
+  text-align: center;
+  margin-top: auto;
+  font-family: "Poppins", sans-serif;
+  background: -webkit-linear-gradient(
+    #cb0909,
+    #d0002e,
+    #cf004a,
+    #c80064,
+    #ba007c,
+    #b0008a,
+    #a2049a,
+    #8e17a9,
+    #8020b4,
+    #6f28bf,
+    #5630ca,
+    #2a38d5
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+footer {
+  align-items: center;
+  margin-top: auto;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  background: -webkit-linear-gradient(
+    #cb0909,
+    #d0002e,
+    #cf004a,
+    #c80064,
+    #ba007c,
+    #b0008a,
+    #a2049a,
+    #8e17a9,
+    #8020b4,
+    #6f28bf,
+    #5630ca,
+    #2a38d5
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+button {
+  width: 100px;
+  opacity: 0.8;
+  border-radius: 3px;
+  border: solid 2px rgb(29, 28, 28);
+  font-weight: 600;
+  background: rgb(0, 0, 0);
+  color: #8020b4;
+}
+
+button:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+select {
+  background: rgb(0, 0, 0);
+  color: #ba007c;
+}
+
+input {
+  flex: 1;
+  border-radius: 3px;
+  font-weight: 600;
+  border: solid 2px rgb(29, 28, 28);
+  background: rgb(0, 0, 0);
+  color: #a2049a;
+}
+
+label {
+  font-weight: 550;
+  background: rgb(0, 0, 0);
+  color: #a2049a;
+}
+
+.container {
+  background-image: radial-gradient(
+    circle,
+    #000000,
+    #010101,
+    #020102,
+    #030202,
+    #040303
+  );
+  align-items: flex-start;
+  border-radius: 4px;
+  box-shadow: 0px -1px 11px 10px #0a0a0ac0;
+  padding: 35px 0;
+}
+
+.rules {
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: 700;
+  padding: 15px;
+  background: -webkit-linear-gradient(
+    #cb0909,
+    #d0002e,
+    #cf004a,
+    #c80064,
+    #ba007c,
+    #b0008a,
+    #a2049a,
+    #8e17a9,
+    #8020b4,
+    #6f28bf,
+    #5630ca,
+    #2a38d5
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+}
+
+.options {
+  display: flex;
+  flex: 1;
+  padding: 5px 19px;
+  justify-content: space-between;
+}
+
+.difficultyLevel {
+  flex: 1;
+  justify-content: space-between;
+
+  font-weight: 600;
+  border: solid 2px rgb(29, 28, 28);
+  border-radius: 3px;
+}
+
+.difficultyLevel:hover {
+  cursor: pointer;
+}
+
+.typeOperation {
+  flex: 1;
+  justify-content: space-between;
+  font-weight: 600;
+  border: solid 2px rgb(29, 28, 28);
+  border-radius: 3px;
+  margin-left: 3px;
+}
+
+.typeOperation:hover {
+  cursor: pointer;
+}
+
+.actButtons {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  align-items: center;
+  padding: 5px 150px;
+}
+
+.operations {
+  flex: 1;
+  padding: 5px 19px;
+}
+
+.results {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 50px;
+  font-weight: 600;
+  background: rgb(0, 0, 0);
+  color: #6f28bf;
+}
