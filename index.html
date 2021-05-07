@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Math 2</title>
+  <link rel="stylesheet" href="style.css">
+  <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100;1,400&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+  <header>
+    <h1>Game math</h1>
+  </header>
+<div class="container">
+  <div class="instructions">
+    <div class="rules">
+      <p>Game duration is 45s;</p>
+      <p>Mandatory to select operation and difficulty;</p>
+      <p>Click on the start button to start drawing numbers;</p>
+      <p>To confirm the answer, press the enter key;</p>
+      <p>By clicking on the reset button, all fields will be reset;</p>
+      <p>Come on, good luck!</p>
+      
+    </div>
+  </div>
+
+  <div class="game">
+    <div class="options">
+      <select name="difficulty" id="difficultyLevel" class="difficultyLevel" onchange="antiGame.selectDifficulty(event)">
+        <option value="0">Select difficulty</option>
+        <option value="e">Easy</option>
+        <option value="m">Medium</option>
+        <option value="h">Hard</option>
+        <option value="x">Extreme</option>
+      </select>
+
+      <select name="operations" id="typeOperation" class="typeOperation" onchange="antiGame.selectOperation(event)">
+        <option value="0">Select operation</option>
+        <option value="+">Addition</option>
+        <option value="-">Subtraction</option>
+        <option value="*">Multiplication</option>
+        <option value="/">Split</option>
+        <option value="r">Random</option>
+      </select>
+      
+    </div>
+    
+    <div id="operations" class="operations">
+      <input type="text" id="input1" readonly>
+      <label id="signal">?</label>
+      <input type="text" id="input2" readonly>
+      <label> = </label>
+      <input type="text" id="input3" placeholder="Answer here" onkeydown="validateData.validateResult(event)">
+    </div>
+
+    <div class="actButtons">
+      <button id="start" onclick="startGame.init()">Start</button>
+      <button id="reset" onclick="resetGame.reset()">Reset</button>
+    </div>
+
+    <div id="results" class="results">
+      <p id="hits">Hits: 0</p>
+      <p id="errors">Errors: 0</p>
+      <p id="time">Time: 45s</p>
+    </div>
+  </div>
+</div>
+<footer>dev.GameMath</footer>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
